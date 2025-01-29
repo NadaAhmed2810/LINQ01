@@ -125,6 +125,31 @@ namespace LINQ01
             //    Console.WriteLine(n);
             //}
             #endregion
+            #region LINQ Execution Way
+
+            #region 1.Differed Execution
+            //1.Differed Execution (latest Version of data)
+            // List<int> Numbers = new List<int>(10) { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //var OddNumbers = Numbers.Where( n => n % 2 == 1);
+            //Numbers.AddRange([11, 12, 13, 14, 15]);
+            //foreach (int n in OddNumbers)
+            //{
+            //    Console.WriteLine(n);
+            //} 
+            #endregion
+            #region Immediate Execution
+            //Immediate Execution(Element Operator,Casting Operator,Aggregate Operator
+            //.first(),.Count(),.TOList()
+            List<int> Numbers = new List<int>(10) { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var OddNumbers = Numbers.Where(n => n % 2 == 1).ToList();
+            Numbers.AddRange([11, 12, 13, 14, 15]);
+            foreach (int n in OddNumbers)
+            {
+                Console.WriteLine(n);
+            }
+            #endregion
+
+            #endregion
         }
     }
 }
