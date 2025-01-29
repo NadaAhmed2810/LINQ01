@@ -66,6 +66,12 @@
 
 
             #endregion
+            #region Extension Method 
+            //int Number = 12345;
+            //int ReverseNumber = IntExtension.Reverse(Number);
+            //ReverseNumber = Number.Reverse();
+            //Console.WriteLine(ReverseNumber);
+            #endregion
 
         }
     }
