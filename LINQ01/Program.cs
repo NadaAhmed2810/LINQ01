@@ -1,4 +1,6 @@
-﻿namespace LINQ01
+﻿using System.Collections;
+
+namespace LINQ01
 {
     internal class Program
     {
@@ -90,6 +92,38 @@
             //    Console.WriteLine(number);
             //}
 
+            #endregion
+            #region LINQ Syntax
+            //List<int> Numbers = new List<int>(10) { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            #region Fluent Syntax
+            ////1.Fluent Syntax  
+
+            ////1.Call LINQ Operator as static method 
+
+            //var OddNumbers = Enumerable.Where(Numbers, n => n % 2 == 1);
+            //Numbers.AddRange([11, 12, 13, 14, 15]);
+
+            ////2.Call LINQ Operator as Extension  method 
+            //OddNumbers = Numbers.Where(n => n % 2 == 1); 
+            #endregion
+            #region Query syntax Or Query Expression
+            ///Starting With From 
+            ///Introducing Range Variable (N) :Represent each and every Element in Input Sequence
+            ///Ended By Select or Group By
+            /*
+             *Select N
+             *From Numbers N
+             *Where N%2=1
+             *
+             ***/
+            //var OddNumbers=from N in Numbers
+            //           where N % 2 ==1 
+            //           select N;
+            #endregion
+            //foreach (int n in OddNumbers)
+            //{
+            //    Console.WriteLine(n);
+            //}
             #endregion
         }
     }
