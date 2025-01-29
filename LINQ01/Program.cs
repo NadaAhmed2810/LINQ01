@@ -72,7 +72,25 @@
             //ReverseNumber = Number.Reverse();
             //Console.WriteLine(ReverseNumber);
             #endregion
+            #region LINQ
+            //LINQ:Stands for  Language Integrated Query 
+            //LINQ:+60 Extension Methods for Built_in In Interface "IEnumerable" into 13 Category 
+            //    : Named as "LINQ Operators" Existed in Class "Enumerable"
+            //    :Categorized into 13 Categories
+            //Use LINQ Operators against Data(Stored in Sequence) ,Regardless Data Store (File,DataBase Provider [SQl Server])
+            //Sequence: Is an Object from Class Implement "IEnumerable" interface like list 
+            //1. Local Sequence :L2O (Linq to object) L2XML
+            //2. Remote Sequence Like Data Base: L2EF
 
+            //List<int> Numbers = new List<int>(10) {1,2,3,4,5,6,7,8,9,10 };
+            //var OddNumbers=Numbers.Where(x => x %2!= 0);
+            //Numbers.AddRange([11, 12, 13, 14, 15]);
+            //foreach (int number in OddNumbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            #endregion
         }
     }
 }
