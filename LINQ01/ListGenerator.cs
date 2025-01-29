@@ -7,6 +7,10 @@ using System.Xml.Linq;
 
 namespace LINQ01
 {
+    class Product02 : Product
+    {
+        public int serialNumber { get; set; }
+    }
     class Product
     {
         public long ProductID { get; set; }
@@ -73,8 +77,9 @@ namespace LINQ01
 
             static ListGenerator()
             {
-                ProductList = new List<Product>()
+            ProductList = new List<Product>()
             {
+                    new Product02(){serialNumber=123456},
                 new Product() {ProductID = 1, ProductName = "Chai", Category = "Beverages",
                             UnitPrice = 18.00M, UnitsInStock = 100},
                     new Product{ ProductID = 2, ProductName = "Chang", Category = "Beverages",

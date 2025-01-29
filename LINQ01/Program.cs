@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Net.Http.Headers;
 using static LINQ01.ListGenerator;
 
 
@@ -156,6 +157,93 @@ namespace LINQ01
             //Console.WriteLine(ProductList[0]);
             //Console.WriteLine(CustomerList[0]);
 
+            #endregion
+            #region Filteration (Restrication)_Operators where / OfType
+            //var Result = ProductList.Where(P=>P.UnitsInStock==0);
+            //Result = from P in ProductList
+            //         where P.UnitsInStock==0
+            //         select P;
+            //var Result = ProductList.Where(P => P.UnitsInStock == 0 && P.Category == "Meat/Poultry");
+            //Result = from P in ProductList
+            //         where P.Category == "Meat/Poultry " && P.UnitsInStock == 0
+            //         select P;
+
+            //Indexed Where 
+            ////valid only With fluent Syntax;
+            ////Get from the first 10 product , product out of stock
+            ///var Result = ProductList.Where((P, I) => P.UnitsInStock == 0 && I < 10);
+            #region TypeOf
+            //var Result = ProductList.OfType<Product02>();
+
+            //#endregion
+
+            //foreach (var Unit in Result)
+            //{
+            //    Console.WriteLine(Unit);
+            //}
+            #endregion
+            #endregion
+            #region Transformation (projection )Operator Select | Select Many
+
+            #region select 
+            ///var Result = ProductList.Select(P => P.ProductName);
+            ///Result = from P in ProductList
+            ///         select P.ProductName;
+
+            ///var Result=ProductList.Where(P=>P.UnitsInStock>0)
+            ///                     .Select(P=>$"{P.ProductID} :: {P.ProductName}");
+            ///Result = from P in ProductList
+            ///         where P.UnitsInStock > 0
+            ///         select $"{P.ProductID} :: {P.ProductName}";
+
+            ///var Result = ProductList.Where(P => P.UnitsInStock > 0)
+            ///                      .Select(P => new {P.ProductID,P.ProductName});
+            ///Result = from P in ProductList
+            ///        where P.UnitsInStock > 0
+            ///        select new { P.ProductID, P.ProductName };
+            //var Result = ProductList.Where(P => P.UnitsInStock > 0)
+            //                       .Select(P => new
+            //                       {
+            //                           P.ProductID,
+            //                           P.ProductName,
+            //                           NewUnitPrice = (.8m * P.UnitPrice),
+
+            //                       });
+            //Result = from P in ProductList
+            //         where P.UnitsInStock > 0
+            //         select new
+            //         {
+            //             P.ProductID,
+            //             P.ProductName,
+            //             NewUnitPrice = (.8m * P.UnitPrice),
+
+            //         };
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //var Result = ProductList.Select((P, Index) => new { Index, P.ProductName });
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+            #region select Many
+            //var Result = CustomerList.SelectMany(C=>C.Orders);
+            //Result = from C in CustomerList
+            //         from O in C.Orders
+            //         select O;
+
+            //var Result = CustomerList.SelectMany(C => C.Orders,(Customer,Order)=>new  { Customer,Order});
+            //Result = from C in CustomerList
+            //         from O in C.Orders
+            //         select new {Customer=C,Order=O };
+            //foreach (var Customer in Result)
+            //{
+            //    Console.WriteLine($"{Customer.Customer}:: {Customer.Order}");
+            //}
+          
+            #endregion
             #endregion
         }
     }
