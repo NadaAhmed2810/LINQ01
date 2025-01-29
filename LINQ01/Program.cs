@@ -242,8 +242,23 @@ namespace LINQ01
             //{
             //    Console.WriteLine($"{Customer.Customer}:: {Customer.Order}");
             //}
-          
+
             #endregion
+            #endregion
+            #region Order Operator order /order by /orderdescandanic
+            //var Result = ProductList.Order();
+
+            //Result = ProductList.OrderBy(P=>P.ProductID).ThenBy(P=>P.ProductName);
+            //Result= from P in ProductList
+            //        orderby P.ProductID, P.ProductName
+            //        select P;
+            //Result = from P in ProductList
+            //         where P.UnitsInStock==0
+            //         select P;
+            //var Result = ProductList.Where(P => P.UnitsInStock == 0 && P.Category == "Meat/Poultry");
+            //Result = from P in ProductList
+            //         where P.Category == "Meat/Poultry " && P.UnitsInStock == 0
+            //         select P;
             #endregion
         }
     }

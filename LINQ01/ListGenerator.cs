@@ -11,7 +11,7 @@ namespace LINQ01
     {
         public int serialNumber { get; set; }
     }
-    class Product
+    class Product:IComparable<Product>
     {
         public long ProductID { get; set; }
         public string ProductName { get; set; }
@@ -19,6 +19,10 @@ namespace LINQ01
         public decimal UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
 
+        public int CompareTo(Product? other)
+        {
+            return ProductID.CompareTo(other?.ProductID??0);
+        }
 
         public override string ToString()
             => $"ProductID: {ProductID}, ProductName: {ProductName}, Category: {Category}, UnitPrice: {UnitPrice:c}, UnitsInStock: {UnitsInStock}";
