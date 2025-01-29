@@ -40,6 +40,33 @@
 
             #endregion
             #endregion
+            #region Anonymous Type
+            #region with Keyword 
+            ////The object That Will be Created from "Anonymous Type" => is an Immutable Object [Cannot Changed ]
+            //var employee = new {Id=3333,Name="Nada" };
+            ////employee.Id = 50;//not valid 
+            //employee = new { Id = 4444, employee.Name };
+            //employee = employee with { Id = 4444 };// [Syntax Suger] 
+            #endregion
+            ///Employee employee = new Employee() {Id =1111,Name="Noura",Salary=20000 };
+            ///object  employee = new  { Id = 1111, Name = "Noura", Salary = 20000 }; //not valid 
+            ///var employee = new { Id = 1111, Name = "Noura", Salary = 20000 };
+            //Console.WriteLine(employee.GetType());//AnonymousType0`3 0 order 3 to number of Attribute 
+            //var employee2 = new { Id = 2222, Name = "Nour", Salary = 50_000F };
+            //Console.WriteLine(employee2.GetType());
+            //var employee03 = new { Id = 3333, Salary = 8000, Name = "Nadeen" };
+            //Console.WriteLine(employee03.GetType());//AnonymousType1`3
+            //var employee04 = new { id = 3333, Name = "Nadeen" , Salary = 8000 };
+            //Console.WriteLine(employee04.GetType());//AnonymousType2`3
+            ////The Same AnonymousType as long as :
+            ////1. The Same Naming[Case Sensitive]
+            ////2. The Same Order 
+            ////3. The Same Number 
+
+
+
+            #endregion
+
         }
     }
 }
