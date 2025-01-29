@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using static LINQ01.ListGenerator;
+
 
 namespace LINQ01
 {
@@ -140,14 +142,19 @@ namespace LINQ01
             #region Immediate Execution
             //Immediate Execution(Element Operator,Casting Operator,Aggregate Operator
             //.first(),.Count(),.TOList()
-            List<int> Numbers = new List<int>(10) { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            var OddNumbers = Numbers.Where(n => n % 2 == 1).ToList();
-            Numbers.AddRange([11, 12, 13, 14, 15]);
-            foreach (int n in OddNumbers)
-            {
-                Console.WriteLine(n);
-            }
+            //List<int> Numbers = new List<int>(10) { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //var OddNumbers = Numbers.Where(n => n % 2 == 1).ToList();
+            //Numbers.AddRange([11, 12, 13, 14, 15]);
+            //foreach (int n in OddNumbers)
+            //{
+            //    Console.WriteLine(n);
+            //}
             #endregion
+
+            #endregion
+            #region Setup Data 
+            //Console.WriteLine(ProductList[0]);
+            //Console.WriteLine(CustomerList[0]);
 
             #endregion
         }
