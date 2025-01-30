@@ -40,7 +40,20 @@ namespace Assignment
             //{
             //    Console.WriteLine(Product);
             //}
-            
+
+
+            #endregion
+            #endregion
+            #region Ordering Operators
+            #region Q1:Sort a list of products by name
+            //var Result = ProductList.OrderBy(P => P.ProductName);
+            //Result=from P in ProductList
+            //       orderby P.ProductName
+            //       select P;
+            //foreach (var Product in Result) {
+            //    Console.WriteLine(Product.ProductName);
+            //}
+
 
             #endregion
             #endregion
