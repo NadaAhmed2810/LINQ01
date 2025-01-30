@@ -56,6 +56,16 @@ namespace Assignment
 
 
             #endregion
+            #region Q2: Uses a custom comparer to do a case-insensitive sort of the words in an array.
+            //var Result = CustomerList.Order().ToArray();
+            //Result=(from C in CustomerList
+            //       orderby C.CustomerName
+            //       select C).ToArray();
+            //foreach (var Customer in Result)
+            //{
+            //    Console.WriteLine(Customer);
+            //}
+            #endregion
             #endregion
 
         }
