@@ -1,4 +1,5 @@
-﻿using static LINQ01.ListGenerator;
+﻿using LINQ01;
+using static LINQ01.ListGenerator;
 namespace Assignment
 {
     internal class Program
@@ -65,6 +66,19 @@ namespace Assignment
             //{
             //    Console.WriteLine(Customer);
             //}
+            #endregion
+            #region Sort a list of products by units in stock from highest to lowest.
+            //var Result = ProductList.OrderByDescending(P => P.UnitsInStock);
+            //Result= from P in ProductList
+            //        orderby P.UnitsInStock descending
+            //        select P;
+
+            //foreach (var Product in Result)
+            //{
+            //    Console.WriteLine(Product);
+            //}
+
+
             #endregion
             #endregion
 
