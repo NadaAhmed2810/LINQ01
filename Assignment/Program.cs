@@ -192,6 +192,19 @@ namespace Assignment
             //    Console.WriteLine(result);
             //}
             #endregion
+            #region Q6:Select all orders where the order total is less than 500.00.
+            //var Result = CustomerList.SelectMany(C => C.Orders).Where(O => O.Total < 500);
+            //Result = from C in CustomerList
+            //         from O in C.Orders
+            //         where O.Total < 500
+            //         select O;
+                  
+            //foreach (var Customer in Result)
+            //{
+            //    Console.WriteLine(Customer);
+            //}
+
+            #endregion
             #endregion
 
         }
