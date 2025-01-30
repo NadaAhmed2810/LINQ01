@@ -102,7 +102,18 @@ namespace Assignment
             //}
 
             #endregion
+            #region Q6:. Sort a list of products, first by category, and then by unit price, from highest to lowest.
+            //var Result = ProductList.OrderBy(P => P.Category).ThenByDescending(P => P.UnitPrice);
+            //Result=from P in ProductList
+            //       orderby P.Category,P.UnitPrice descending
+            //       select P;
+                   
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
+            #endregion
             #endregion
 
         }
