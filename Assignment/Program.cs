@@ -107,10 +107,23 @@ namespace Assignment
             //Result=from P in ProductList
             //       orderby P.Category,P.UnitPrice descending
             //       select P;
-                   
+
             //foreach (var item in Result)
             //{
             //    Console.WriteLine(item);
+            //}
+
+            #endregion
+            #region Q7: Sort first by word length and then by a case-insensitive descending sort of the words in an array.
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //var Result = Arr.OrderBy(W => W.Length)
+            //                 .ThenByDescending(W => W.ToLower());
+            //Result = from A in Arr
+            //         orderby A.Length, A.ToLower() descending
+            //         select A;
+            //foreach (var word in Result)
+            //{
+            //    Console.WriteLine(word);
             //}
 
             #endregion
