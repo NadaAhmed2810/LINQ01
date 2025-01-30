@@ -31,6 +31,18 @@ namespace Assignment
             //}
 
             #endregion
+            #region Q3. Returns digits whose name is shorter than their value.
+            //var Result = (ProductList.Where(P => P.ProductName.Length < P.UnitPrice).Select(P=>P.ProductName.Length)).ToHashSet();
+            //Result =(from P in ProductList
+            //        where P.ProductName.Length < P.UnitPrice
+            //        select P.ProductName.Length).ToHashSet();
+            //foreach (var Product in Result)
+            //{
+            //    Console.WriteLine(Product);
+            //}
+            
+
+            #endregion
             #endregion
 
         }
