@@ -127,6 +127,14 @@ namespace Assignment
             //}
 
             #endregion
+            #region Q8: Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array.
+            //string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //var Result = Arr.Where(A => A[1] == 'i').Reverse();
+            //foreach (var A in Result)
+            //{
+            //    Console.WriteLine(A);
+            //}
+            #endregion
             #endregion
 
         }
