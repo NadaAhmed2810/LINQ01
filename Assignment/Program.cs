@@ -198,12 +198,24 @@ namespace Assignment
             //         from O in C.Orders
             //         where O.Total < 500
             //         select O;
-                  
+
             //foreach (var Customer in Result)
             //{
             //    Console.WriteLine(Customer);
             //}
 
+            #endregion
+            #region Q7:Select all orders where the order was made in 1998 or later.
+            //var Result = CustomerList.SelectMany(C => C.Orders).Where(O => O.OrderDate.Year > 1998);
+            //Result = from C in CustomerList
+            //         from O in C.Orders
+            //         where O.OrderDate.Year >= 1998
+            //         select O;
+
+            //foreach (var O in Result)
+            //{
+            //    Console.WriteLine(O);
+            //}
             #endregion
             #endregion
 
