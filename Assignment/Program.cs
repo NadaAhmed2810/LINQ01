@@ -136,6 +136,17 @@ namespace Assignment
             //}
             #endregion
             #endregion
+            #region Transformation Operators
+            #region Q1. Return a sequence of just the names of a list of products
+            //var Result=ProductList.Select(x => x.ProductName);
+            //Result = from P in ProductList
+            //         select P.ProductName;
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #endregion
 
         }
     }
