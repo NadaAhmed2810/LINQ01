@@ -28,7 +28,7 @@ namespace LINQ01
             => $"ProductID: {ProductID}, ProductName: {ProductName}, Category: {Category}, UnitPrice: {UnitPrice:c}, UnitsInStock: {UnitsInStock}";
 
     }
-    class Customer
+    class Customer:IComparable<Customer>
     {
         public string CustomerID { get; set; }
         public string CustomerName { get; set; }
@@ -52,6 +52,13 @@ namespace LINQ01
         }
         public override string ToString()
             => $"{CustomerID}, {CustomerName}, {Address}, {City}, {Region}, {PostalCode}, {Country}, {Phone}, {Fax}";
+
+        public int CompareTo(Customer? other)
+        {
+            return CustomerName.ToLower().CompareTo(other?.CustomerName.ToLower()??" ");
+        }
+
+        
     }
     class Order
     {
@@ -83,7 +90,7 @@ namespace LINQ01
             {
             ProductList = new List<Product>()
             {
-                 
+                  
                 new Product() {ProductID = 1, ProductName = "Chai", Category = "Beverages",
                             UnitPrice = 18.00M, UnitsInStock = 100},
                     new Product{ ProductID = 2, ProductName = "Chang", Category = "Beverages",
