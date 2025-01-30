@@ -83,7 +83,7 @@ namespace LINQ01
             {
             ProductList = new List<Product>()
             {
-                 
+                  
                 new Product() {ProductID = 1, ProductName = "Chai", Category = "Beverages",
                             UnitPrice = 18.00M, UnitsInStock = 100},
                     new Product{ ProductID = 2, ProductName = "Chang", Category = "Beverages",
