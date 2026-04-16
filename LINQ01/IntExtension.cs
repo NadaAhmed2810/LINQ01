@@ -8,7 +8,7 @@ namespace LINQ01
 {
     internal static class IntExtension
     {
-        public static int ReverseNumber (this int Number)
+        public static int Reverse (this int Number)
         {
             int Result = 0;
             while (Number > 0)
