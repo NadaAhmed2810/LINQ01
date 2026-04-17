@@ -13,7 +13,7 @@ namespace LINQ01
         public dynamic Salary { get; set; }
         public override string ToString()
         {
-            return $"Id :{Id},NamE:{Name},Salary:{Salary}";
+            return $"Id :{Id},Name:{Name},Salary:{Salary}";
         }
     }
 }
