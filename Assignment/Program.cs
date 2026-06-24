@@ -20,7 +20,7 @@ namespace Assignment
             //    Console.WriteLine(Product);
             //}
             #endregion
-            #region Q2:. Find all products that are in stock and cost more than 3.00 per unit.
+            #region Q2:. Find all products that are in stock and cost more than 3.000 per unit.
             //var Result = ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3);
             //Result = from P in ProductList
             //         where P.UnitsInStock > 0 && P.UnitPrice>3
