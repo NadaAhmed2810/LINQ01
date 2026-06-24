@@ -57,7 +57,7 @@ namespace Assignment
 
 
             #endregion
-            #region Q2: Uses a custom comparer to do a case-insensitive sort of the words in an array.
+            #region Q2: Uses a custom comparer to do a case insensitive sort of the words in an array.
             //string[] Words = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr" , "cHeRry" };
             //var Result = Words.OrderBy(W =>W.ToLower());
             //foreach (var word in Result)
